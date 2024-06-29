@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Landing Page</title>
+<style>
+  /* CSS Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #555;
+  }
+
+  section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  section:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="index3.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Sections -->
+<section id="home">
+  <h1>Welcome to Our Landing Page</h1>
+  <p><a href="about.html">Learn more about us</a></p>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p><a href="index3.html">Go back to Home</a></p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <p><a href="contact.html">Contact us for more details</a></p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><a href="services.html">Explore our services</a></p>
+</section>
+
+</body>
+</html>

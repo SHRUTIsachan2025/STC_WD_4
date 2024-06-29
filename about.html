@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Animated Landing Page</title>
+<style>
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  /* Animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animated {
+    opacity: 0;
+    animation: slideIn 1s forwards;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1em;
+    }
+    
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="animated">Welcome to Our Website</h1>
+    <p class="animated">Explore our services and discover amazing opportunities.</p>
+    <a href="#" class="button animated">Get Started</a>
+  </div>
+
+  <!-- JavaScript for triggering animation on page load -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.animated').forEach(function(element) {
+        element.style.opacity = 1;
+      });
+    });
+  </script>
+</body>
+</html>
